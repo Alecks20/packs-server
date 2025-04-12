@@ -5,4 +5,4 @@ RUN pip install --no-cache-dir --upgrade -r /app/requirements.txt
 COPY ./ /app
 VOLUME /app/uploads
 RUN mkdir -p /app/uploads
-CMD ["fastapi", "run", "app/app.py", "--port", "80"]
+CMD ["fastapi", "run", "app.py", "--port", "80"]
